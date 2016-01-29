@@ -1,0 +1,42 @@
+@media screen and (max-width: 400px) {
+    #header {
+        width: 100%;
+        background: #414141;
+        height: 60px;
+        #header-wraper {
+            background: #414141;
+            margin: 0 auto;
+            height: 100%;
+            padding: 0;
+            width: 100%;
+            img {
+                /* Rand'OSM Logo */
+                margin-left: 3%;
+                width: 50%;
+                padding-top: 15px;
+            }
+            #login-subscribe {
+                padding: 0;
+                width: 76px;
+                float: right;
+                text-align: center;
+                margin: 3px 8% 0 0;
+                .button {
+                    font-size: .7em;
+                    line-height: 20px;
+                    width: 98px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+    div.content {
+        display: none;
+    }
+    div.wraper {
+        width: 100%;
+    }
+    div.wraper * {
+        display: none;
+    }
+}

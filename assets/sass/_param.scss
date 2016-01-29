@@ -1,0 +1,37 @@
+$color1: white;
+$color2: #34d03f;
+$color3: darken($color2, 20%);
+$bgColor: #3c3c3c;
+
+@mixin transition($who, $time, $timefunction:linear, $delay: 0, $prefixes: -webkit -moz -ms -o) {
+    @each $prefix in $prefixes {
+        #{$prefix}-transition: $who $time $timefunction $delay;
+    }
+    transition: $who $time $timefunction $delay;
+}
+
+@mixin border-radius($radius1, $radius2: $radius1, $radius3: $radius1, $radius4: $radius1, $prefixes: -moz -webkit -o) {
+    @each $prefix in $prefixes {
+        #{$prefix}-border-radius: $radius1 $radius2 $radius3 $radius4;
+    }
+    border-radius:$radius1 $radius2 $radius3 $radius4;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $prefixes: -moz -webkit -ms -o) {
+    @each $prefix in $prefixes {
+        #{$prefix}-box-shadow: $top $left $blur $color;
+    }
+    box-shadow:  $top $left $blur $color;
+}
+
+@mixin inline-block {
+  display: inline-block; /* For normal, healthy browsers */
+ 
+  * html & { /* for IE6 */
+    display: inline;
+  }
+ 
+  *+html & { /* for IE7 */
+    display: inline;
+  }
+}
