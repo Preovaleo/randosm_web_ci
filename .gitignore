@@ -1,0 +1,16 @@
+## config files
+/application/config/config.php
+/application/config/database.php
+
+##useless files
+/application/cache
+/application/logs
+
+#download files
+/downloads/*
+!/downloads/download.php
+
+##IDE files
+/.idea
+/randosm.iml
+
