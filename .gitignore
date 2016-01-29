@@ -5,6 +5,7 @@
 ##useless files
 /application/cache
 /application/logs
+/error_log
 
 #download files
 /downloads/*
@@ -13,4 +14,5 @@
 ##IDE files
 /.idea
 /randosm.iml
+
 
